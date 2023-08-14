@@ -14,7 +14,7 @@ body {
 
   body1::before {
     content: "";
-    background-image: url('/Soothing-nature-backgrounds-2.jpg');
+    background-image: url('https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp');
     opacity: 0.4;
     background-repeat: no-repeat;
     background-position: center;
