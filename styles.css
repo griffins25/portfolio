@@ -242,7 +242,37 @@ body {
   header,
   main {
     margin: 20px;
+  }/* For screens smaller than 576px (mobile devices) */
+
+@media (max-width: 575.98px) {
+  .row1 {
+    text-align: center; /* Center align text for small screens */
+    margin-top: 20px;
   }
+  .circular-image {
+    display: block;
+    margin: 0 auto;
+  }
+  .icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+}
+
+/* For screens larger than 576px (tablets and above) */
+@media (min-width: 576px) {
+  .row1 {
+    text-align: left; /* Reset text alignment for larger screens */
+    margin-top: 0;
+  }
+  .circular-image {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+
   /*******************************************************
                  CV
   *******************************************************/
