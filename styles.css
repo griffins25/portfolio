@@ -1,0 +1,406 @@
+/*******************************************************
+               SITE WIDE
+*******************************************************/
+/* FONTS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lucida Sans", Geneva, sans-serif;
+    font-weight: 200;
+        background-color: blanchedalmond;
+  }
+
+  body1::before {
+    content: "";
+    background-image: url('/Soothing-nature-backgrounds-2.jpg');
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230vh;
+    height: 680px;
+    z-index: -1;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Bebas Neue';
+}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 40px;
+    color: #047;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  h4 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  h5 {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+
+.row1 {
+  list-style-type: none;
+  padding-top: 90px;
+  z-index: 1;
+}
+
+.circular-image {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  opacity: 0.8;
+ 
+}
+
+.circular-image img {
+
+  width: 100%;
+  height: auto;
+}
+  /* NAVBAR */
+  /*.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  .navbar {
+
+      background-color: #fbbc04;
+    color: white;
+    height: 60px;
+  }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar li {
+    margin-left: 20px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+  }*/ 
+
+  .navbar {
+    background-color: #fbbc04;
+    padding-top: -2px;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fbbc04;
+      color: white;
+    }
+    
+    .navbar-nav li a {
+       position: relative;
+      transition: color 0.3s ease;
+    }
+    
+    /* Unique hover effect */
+    
+    .navbar-nav li a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #4519e6; /* Change to desired hover color */
+      transform: scaleX(0); /* Initial scale to hide the line */
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+     .navbar-nav li a::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #791ae6; /* Change to desired hover color */
+      transform: scaleX(0); /* Initial scale to hide the line */
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+     
+    .navbar-nav li a::after {
+      bottom: auto;
+      top: -2px;
+    }
+    
+    .navbar-nav li a:hover::before,
+    .navbar-nav li a:hover::after {
+      transform: scaleX(1); /* Expand the line on hover */
+    } 
+
+    
+    
+    .fa {
+      margin-top: 40px;
+      padding: 12px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    
+    .fa:hover {
+      transform: translateY(-10px); /* Move the icon upwards on hover */
+      background-color: green; /* Change the background color on hover */
+    }
+
+    .fa-facebook {  
+      background: #3B5998;  
+      color: white;  
+    }  
+    .fa-twitter {  
+      background: #55ACEE;  
+      color: white;  
+    }  
+   
+    .fa-linkedin {  
+      background: #007bb5;  
+      color: white;  
+    }  
+    .fa-instagram {  
+      background: #125688;  
+      color: white;  
+    }  
+    .fa-youtube {  
+      background: #bb0000;  
+      color: white;  
+    }  
+    .fa-google {  
+      background: #dd4b39;  
+      color: white;  
+    }  
+
+  ul {
+    
+    display: flex;
+    list-style-type: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header,
+  main {
+    margin: 20px;
+  }
+  /*******************************************************
+                 CV
+  *******************************************************/
+  .paper-background {
+    background-color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px auto;
+  }
+  
+  #info,
+  main {
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  
+  #info {
+    margin: 30px auto;
+  }
+  
+  main {
+    margin: 0 auto;
+  }
+  
+  /* DISPLAY */
+  
+  @media screen and (max-width: 799px) {
+    #info .left {
+      text-align: center;
+    }
+    #info .right {
+      text-align: center;
+      margin-top: 20px;
+    }
+    section .right {
+      margin: 20px;
+    }
+    section h3 {
+      font-weight: bold;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    #info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #info .right {
+      align-self: end;
+      text-align: right;
+    }
+    section {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+  }
+  
+  #info h1 {
+    margin: 0;
+  }
+  #info h2 {
+    margin: 0;
+  }
+  
+  .work-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  
+  .work-item p {
+    grid-area: 2 /1 /3 /3;
+  }
+  
+  /*******************************************************************
+              PROJECTS
+  *********************************************************************/
+  
+  .projects-wrapper {
+    margin: 20px;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item {
+    flex-basis: 300px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    border: 1px solid red;
+    align-items: center;
+  }
+  
+  .item:nth-of-type(1) {
+    flex: 1 0 100px;
+  }
+  .item:nth-of-type(2) {
+    flex: 1 0 100px;
+  }
+  .item:nth-of-type(3) {
+    flex: 1 0 100px;
+  }
+
+#card1, #card2, #card3 {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTueZZB1p1qQ5CUiV1W5sgreoQqNmJSWoj31wqPuPoI&s");
+}
+
+  /*******************************************************
+                  CONTACT
+  *******************************************************/
+  
+  .contact-wrapper {
+    margin: 20px;
+    background-color: white;
+  }
+  
+  .form-question {
+    margin: 20px 0;
+  }
+  .form-question label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-question input,
+  .form-question textarea {
+    width: 80vw;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 5px 10px;
+  }
+  .required label::after {
+    content: " *";
+    color: red;
+  }
+  #submit {
+    padding: 7px 20px;
+    background-color: #256ac4;
+    color: white;
+    border: zero;
+    border-radius: 4px;
+    box-shadow: 1px 2px #333;
+  }
+  #submit:hover {
+    background-color: white;
+    color: #256ac4;
+    box-shadow: none;
+    border: 1px solid#256ac4;
+  }
