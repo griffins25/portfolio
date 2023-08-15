@@ -2,17 +2,9 @@
                SITE WIDE
 *******************************************************/
 /* FONTS */
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-    font-family: "Lucida Sans", Geneva, sans-serif;
-    font-weight: 200;
-        background-color: blanchedalmond;
-  }
 
-  body1::before {
+  #body1::before {
     content: "";
     background-image: url('https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2.jpg.webp');
     opacity: 0.4;
@@ -22,16 +14,15 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 230vh;
-    height: 680px;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
-body {
-  position: relative;
-  overflow: hidden;
+#body1 {
   background-color: black;
   font-family: 'Bebas Neue';
+  scroll-behavior: smooth;
 }
   h1,
   h2,
@@ -91,45 +82,7 @@ body {
   width: 100%;
   height: auto;
 }
-  /* NAVBAR */
-  /*.container {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
   
-  .navbar {
-
-      background-color: #fbbc04;
-    color: white;
-    height: 60px;
-  }
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  .navbar li {
-    margin-left: 20px;
-  }
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .logo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    font-weight: bold;
-  }*/ 
-
   .navbar {
     background-color: #fbbc04;
     padding-top: -2px;
@@ -157,8 +110,8 @@ body {
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: #4519e6; /* Change to desired hover color */
-      transform: scaleX(0); /* Initial scale to hide the line */
+      background-color: #4519e6; 
+      transform: scaleX(0); 
       transform-origin: left;
       transition: transform 0.3s ease;
     }
@@ -169,8 +122,8 @@ body {
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: #791ae6; /* Change to desired hover color */
-      transform: scaleX(0); /* Initial scale to hide the line */
+      background-color: #791ae6;
+      transform: scaleX(0); 
       transform-origin: right;
       transition: transform 0.3s ease;
     }
@@ -182,7 +135,7 @@ body {
     
     .navbar-nav li a:hover::before,
     .navbar-nav li a:hover::after {
-      transform: scaleX(1); /* Expand the line on hover */
+      transform: scaleX(1); 
     } 
 
     
@@ -199,8 +152,8 @@ body {
     }
     
     .fa:hover {
-      transform: translateY(-10px); /* Move the icon upwards on hover */
-      background-color: green; /* Change the background color on hover */
+      transform: translateY(-10px);
+      background-color: green; 
     }
 
     .fa-facebook {  
@@ -242,28 +195,27 @@ body {
   header,
   main {
     margin: 20px;
-  }/* For screens smaller than 576px (mobile devices) */
-
+  }
 @media (max-width: 575.98px) {
   .row1 {
-    text-align: center; /* Center align text for small screens */
+    text-align: center; 
     margin-top: 20px;
   }
   .circular-image {
     display: block;
     margin: 0 auto;
   }
-  .icons {
+  .ga {
     text-align: center;
     margin-top: 20px;
   }
   
 }
 
-/* For screens larger than 576px (tablets and above) */
+
 @media (min-width: 576px) {
   .row1 {
-    text-align: left; /* Reset text alignment for larger screens */
+    text-align: left; 
     margin-top: 0;
   }
   .circular-image {
